@@ -2,6 +2,7 @@
 const dataDirs = require('jupyter-paths').dataDirs()
 const fs = require('fs')
 const path = require('path')
+const mkdirp = require('mkdirp')
 
 if (!dataDirs[0]) {
   throw new Error("Jupyter paths reported empty dataDirs")
@@ -15,9 +16,9 @@ const kernelSpec = JSON.stringify({
   ],
   "display_name": "Node.js",
   "language": "javascript"
-})
+}, 2, 2)
 
-fs.mkdir(baseDir, (err) => {
+mkdirp(baseDir, (err) => {
   if (err && err.code !== 'EEXIST') {
     console.error(err)
     process.exit(1)
@@ -25,5 +26,3 @@ fs.mkdir(baseDir, (err) => {
   fs.writeFileSync(path.join(baseDir, 'kernel.json'), kernelSpec)
 
 })
-
-// fs.mkdirSync(baseDir)
