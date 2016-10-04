@@ -22,9 +22,7 @@ const kernelInfoReply = {
         'mimetype': 'application/javascript',
         'file_extension': '.js',
     },
-    'banner': (
-        `INodeJS v${version}\nhttps://github.com/rgbkrk/inodejs`,
-    ),
+    'banner': `INodeJS v${version}\nhttps://github.com/rgbkrk/inodejs`,
     'help_links': [
       {
         'text': 'Mozilla Developer Network - JS',
