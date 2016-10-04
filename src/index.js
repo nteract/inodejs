@@ -18,10 +18,11 @@ const kernelInfoReply = {
     'implementation': 'inodejs',
     'implementation_version': version,
     'language_info': {
-        'name': 'javascript',
+        'name': 'node.js',
         'version': process.versions.node,
         'mimetype': 'application/javascript',
         'file_extension': '.js',
+        'codemirror_mode': 'javascript',
     },
     'banner': `INodeJS v${version}\nhttps://github.com/rgbkrk/inodejs`,
     'help_links': [
@@ -38,9 +39,9 @@ const kernelInfoReply = {
 
 const config = {
   hideUndefined: true,
-  protocolVersion: kernelInfoReply.protocolVersion,
+  protocolVersion: '5.0',
   kernelInfoReply,
-  connnection: JSON.parse(fs.readFileSync(connectionFile)),
+  connection: JSON.parse(fs.readFileSync(connectionFile)),
 };
 
 // Start kernel
