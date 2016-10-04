@@ -1,6 +1,6 @@
 {
   "name": "inodejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.js kernel for Jupyter",
   "main": "index.js",
   "scripts": {
