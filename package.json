@@ -13,7 +13,7 @@
   "author": "Kyle Kelley",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "jp-kernel-prebuilt": "0.0.1",
+    "jp-kernel-prebuilt": "0.0.3",
     "jupyter-paths": "^1.0.2",
     "mkdirp": "^0.5.1"
   }
