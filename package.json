@@ -4,7 +4,8 @@
   "description": "Node.js kernel for Jupyter",
   "main": "index.js",
   "scripts": {
-    "install:kernel": "TODO"
+    "install:kernel": "node src/install-kernel.js",
+    "postinstall": "npm run install:kernel"
   },
   "bin": {
     "inodejskernel": "src/index.js"
@@ -12,6 +13,8 @@
   "author": "Kyle Kelley",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "jp-kernel": "0.0.1"
+    "jp-kernel": "0.0.1",
+    "jupyter-paths": "^1.0.2",
+    "mkdirp": "^0.5.1"
   }
 }
