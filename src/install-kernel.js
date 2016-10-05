@@ -9,9 +9,12 @@ if (!dataDirs[0]) {
 }
 
 const baseDir = path.join(dataDirs[0], 'kernels', 'nodejs')
+const baseCommand = 'inodejskernel'
+const command = process.platform === 'win32' ? `${baseCommand}.cmd` : baseCommand
+
 const kernelSpec = JSON.stringify({
   argv: [
-    "inodejskernel",
+    command,
     "{connection_file}"
   ],
   "display_name": "Node.js",
