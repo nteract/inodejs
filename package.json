@@ -12,9 +12,13 @@
   },
   "author": "Kyle Kelley",
   "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rgbkrk/inodejs.git"
+},
   "dependencies": {
-    "jp-kernel-prebuilt": "0.0.3",
-    "jupyter-paths": "^1.0.2",
+    "jp-kernel": "^0.1.0",
+    "jupyter-paths": "^1.1.0",
     "mkdirp": "^0.5.1"
   }
 }
