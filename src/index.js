@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const Kernel = require('jp-kernel-prebuilt');
+const Kernel = require('jp-kernel');
 
 const connectionFile = process.argv[2];
 
